@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script-form-registro.js"></script>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">SHD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Soporte Tecnico</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registrarse</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Iniciar Sesion</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav><br><br><br><br>
+    <h3 class="text-center">Registrese Para Formar parte de SHD</h3>
+    <br><br><br>
+    
+    <div class="container-fluid row">
+        <div class="col-md-6">
+            <h4 class="text-center">Una vez registrado usted prodra realizar:</h4>
+            <hr class="my-4">
+            <div class="jumbotron">
+                <h5>Gestion de Problemas.</h5>
+                <p>Aísle los problemas, vincúlados a incidentes existentes o pasados, realice un análisis de la causa raíz de la cronología de los eventos de su sistema de asistencia y minimice las interrupciones en el negocio o corporacion</p>
+            </div>
+            <div class="jumbotron">
+                <h5>Integracion</h5>
+                <p>Planifique,revierta los cambios con su herramienta de SHD y permita que los miembros relevantes evalúen y aprueben los cambios. Analice y mitigue los riesgos mediante la evaluación de nuevos cambios antes de que se implemente.</p>
+            </div>        
+        </div>
+        <div class="col-md-6 form-control">
+          <br><br>
+           <form action="iniciar_sesion.php" method="post" onsubmit="return validar_form()">
+               <div class="form-group">
+                   <label for="nombre">Nombre:</label>
+                   <input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre">
+               </div>
+               <div class="form-group">
+                   <label for="apellido">Apellidos:</label>
+                   <input type="text" id="apellido" class="form-control" placeholder="Apellidos" name="apellidos">
+               </div>
+               <div class="form-group">
+                   <label for="correo">Correo:</label>
+                   <input type="email" class="form-control" id="correo" placeholder="example@example.com" name="email">
+               </div>
+               <div class="form-group">
+                   <label for="contraseña">Contraseña:</label>
+                   <input type="password" class="form-control" id="contraseña" placeholder="Password" name="contra">
+               </div>
+               <div class="form-group">
+                   <label for="departamento">Seleccione Departamento:</label>
+                   <select name="dep" id="departamento" class="form-control">
+                       <option value="Limpieza">Limpieza</option>
+                       <option value="Mantenimiento">Mantenimiento</option>
+                       <option value="Sistemas">Sistemas</option>
+                       <option value="Electromecanica">Electromecanica</option>
+                       <option value="Bioquimica">Bioquimica</option>
+                       <option value="Administracion">Administracion</option>
+                       <option value="Contador Publico">Contador Publico</option>
+                   </select>
+               </div>
+               <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="terminos">
+                   <label for="terminos" class="form-check-label">Acepto Terminos y Condiciones</label>
+               </div><br>
+               <button type="submit" class="btn btn-primary" id="btnenviar">Registrarse</button>
+           </form>
+            
+        </div>
+    </div>
+    <br><br>
+    <footer>
+       <br>
+        COPYRIGHT 2018
+        System Help Desk
+        ALL RIGHTS RESERVED.
+    </footer>
+    <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
